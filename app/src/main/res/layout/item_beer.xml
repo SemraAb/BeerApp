@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_marginBottom="16dp"
+    android:backgroundTint="#F4C314">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/beerName"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:text="Tuborg"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/beerTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Real Bitter Experience"
+            android:textSize="16dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic" />
+        <TextView
+            android:id="@+id/beerFirstBrewed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12.2007"
+            android:textSize="14dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_gravity="end"/>
+</androidx.cardview.widget.CardView>
